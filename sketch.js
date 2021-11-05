@@ -3,15 +3,10 @@ var params = {
     colour: [191, 0, 255]
 };
 
-var gui;
-var visible = true;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
     background(220);
-    gui = createGui();
-    gui.addObject(params);
-    gui.hide();
 }
 
 function draw() {
