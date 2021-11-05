@@ -11,6 +11,7 @@ function setup() {
     background(220);
     gui = createGui();
     gui.addObject(params);
+    gui.hide();
 }
 
 function draw() {
