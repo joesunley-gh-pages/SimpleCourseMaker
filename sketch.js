@@ -6,7 +6,6 @@ var params = {
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
-    background(220);
 }
 
 function draw() {
@@ -27,7 +26,6 @@ function keyPressed() {
     switch (keyCode){
         case 27:
             clear();
-            background(220);
             clickCounter = 0;
             controls = [];
             reset = false;
@@ -70,13 +68,7 @@ function mouseClicked(){
     }
     clickCounter++;
 }
-function doubleClicked(){
-    if (!reset){
-        reset = true;
-        drawFinish(mouseX, mouseY);
-    }
-    
-}
+
 
 //#region Functions
 
